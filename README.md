@@ -11,7 +11,7 @@ if you want to install a specific version just add `#v<version>` to the link
 
 Example:
 
-`cordova plugin add cordova-plugin-html2pdf@v0.0.1`
+`cordova plugin add cordova-plugin-html2pdf@0.0.1`
 
 Description
 ===========
