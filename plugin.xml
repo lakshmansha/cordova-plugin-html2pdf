@@ -1,0 +1,40 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-html2pdf"
+    version="0.0.1">
+     <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <name>Html2pdf</name>
+    <description>Cordova Html To Pdf Converter Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova, html, pdf, ios, android</keywords>
+    <repo>https://github.com/lakshmansha/cordova-plugin-html2pdf.git</repo>    
+
+    <js-module src="www/Html2pdf.js" name="Html2pdf">
+        <merges target="cordova.plugins.html2pdf" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Html2pdf">
+                <param name="ios-package" value="Html2pdf"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Html2pdf.h"/>
+        <source-file src="src/ios/Html2pdf.m"/>
+    </platform>
+
+    <platform name="android">       
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Html2pdf">
+                <param name="android-package" value="org.apache.cordova.html2pdf.Html2pdf"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/libs/iText-4.2.0-com.itextpdf.jar" target-dir="libs" />        
+        <source-file 
+            src="src/android/Html2pdf.java" 
+            target-dir="src/com/cordova/html2pdf"/>
+    </platform>
+</plugin>
