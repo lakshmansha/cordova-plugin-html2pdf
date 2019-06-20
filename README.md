@@ -1,7 +1,11 @@
-# cordova-plugin-html2pdf
+# Cordova-Plugin-Html2pdf
 Plugin for **cordova greater or equal than v3.0.0_** to enable to call Mobile.
 
-##Installation
+[![Build status](https://dev.azure.com/public-org/AzurePipeline/_apis/build/status/Cordova-Phone-Html2Pdf%20Plugin)](https://dev.azure.com/public-org/AzurePipeline/_build/latest?definitionId=0)
+
+
+Installation
+===============
 
 Just type the following statement in your cli Cordova for install.
 
