@@ -11,7 +11,7 @@ Just type the following statement in your cli Cordova for install.
 
 `cordova plugin add cordova-plugin-html2pdf`
 
-if you want to install a specific version just add `#v<version>` to the link
+if you want to install a specific version just add `@<version>` to the link
 
 Example:
 
